@@ -28,10 +28,6 @@ alias psr='ps aux | grep ruby'
 alias cdb='cd -'
 alias cls='clear;ls'
 
-# Show human friendly numbers and colors
-alias df='df -h'
-alias du='du -h -d 2'
-
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
@@ -211,3 +207,22 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+alias dave='ssh dave.mlsrvr.com -L4040:192.168.64.50:4040'
+alias dfw1a='ssh shell.dfw1a.mlsrvr.com'
+alias dfw1t='ssh login.dfw1t.mlsrvr.com'
+alias iad3a='ssh shell.iad3a.mlsrvr.com'
+alias iad3b='ssh shell.iad3b.mlsrvr.com'
+alias kif='ssh root@kif.2123studios.com'
+alias kif_external_proxy='ssh shell.2123studios.com -L\*:2202:kif.2123studios.com:2202'
+alias master='ssh -t shell.iad3a.mlsrvr.com "sudo ssh master1.mail.iad3a"'
+alias mkproxy2='launchctl start com.2123studios.ssh-tunnel'
+alias ord1a='ssh shell.ord1a.mlsrvr.com'
+alias ord1b='ssh shell.ord1b.mlsrvr.com'
+alias ord1c='ssh shell.ord1c.mlsrvr.com'
+alias ord1d='ssh shell.ord1d.mlsrvr.com'
+alias preprod='ssh preprod'
+alias rdp='ssh root@kif.2123studios.com -L3389:192.168.0.106:3389'
+
+alias jcproxy='jconsole -J-DsocksProxyHost=localhost -J-DsocksProxyPort=5559'
+
